@@ -2,6 +2,7 @@ vars = {
 
  "skia_revision": "a6a8f00a3977e71dbce9da50a32c5e9a51c49285",
 
+ "googlecode_url": "http://%s.googlecode.com/svn",
 }
 
 
@@ -9,6 +10,10 @@ deps = {
 
  "src/third_party/skia/":                                                         
 
- "https://skia.googlesource.com/skia.git@" + Var("skia_revision"),         
+ "https://skia.googlesource.com/skia.git@" + Var("skia_revision"),     
+
+  "src/tools/gyp":
+
+  (Var("googlecode_url") % "gyp") + "/trunk@1700",    
 
 } 
