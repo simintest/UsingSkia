@@ -1,6 +1,6 @@
 vars = {
 
- "skia_revision": "d1830323662ae8ae06908b97f15180fd25808894",
+ "skia_revision": "master",
 
 }
 
